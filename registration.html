@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IronCore Gym - Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<button id="darkBtn">Dark Mode</button>
+
+<header>
+  <div id="logo">IronCore Gym</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="registration.html">Registration</a>
+  </nav>
+</header>
+
+<main>
+
+
+  <img src="logo.PNG" width="200" height="80">
+
+  <h1>Registration</h1>
+
+  <form id="regForm">
+
+    <p>Full Name</p>
+    <input type="text" id="fullName">
+
+    <p>Email</p>
+    <input type="text" id="email">
+
+    <p>Phone</p>
+    <input type="text" id="phone">
+
+    <p>Membership</p>
+    <select id="membership">
+      <option value="">Select</option>
+      <option>Basic</option>
+      <option>Standard</option>
+      <option>Premium</option>
+    </select>
+
+    <p>Fitness Goals</p>
+    <textarea id="goals"></textarea>
+
+    <p>Age</p>
+    <input type="text" id="age">
+
+    <p>Additional Field 1</p>
+    <input type="text" id="extra1">
+
+    <p>Additional Field 2</p>
+    <input type="text" id="extra2">
+
+    <button type="button" id="submitBtn">Submit</button>
+    <button type="button" id="clearBtn">Clear</button>
+
+    <div id="validationResults">
+      <p>All fields filled out: <span id="checkAll">No</span></p>
+      <p>Email format valid: <span id="checkEmail">No</span></p>
+      <p>Phone number valid: <span id="checkPhone">No</span></p>
+      <p>Age range valid: <span id="checkAge">No</span></p>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  <p>123 Fitness Ave · (555) 123-4567 · IronCore@core.com · Careers · Terms</p>
+</footer>
+
+</body>
+</html>
+
