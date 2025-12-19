@@ -6,15 +6,48 @@ if (darkBtn) {
 }
 
 var workouts = {
-  2: ["HIIT - 7pm"],
-  6: ["Open Gym - 10am"],
-  13: ["Open Gym - 10am"],
-  20: ["Open Gym - 10am"],
-  27: ["Open Gym - 10am"],
-  9: ["Strength - 6pm", "Core - 7pm"],
-  25: ["Closed"],
-  31: ["Closed"]
-};
+    1: ["Strength - 6pm"],
+    2: ["HIIT - 7pm"],
+    3: ["Yoga - 6pm"],
+    4: ["Upper Body - 7pm"],
+    5: ["Lower Body - 6pm"],
+  
+    6: ["Bootcamp - 9am"],
+    7: ["Mobility & Stretch - 10am"],
+  
+    8: ["Strength - 6pm"],
+    9: ["Strength - 6pm", "Core - 7pm"],
+    10: ["Yoga - 6pm"],
+    11: ["HIIT - 7pm"],
+    12: ["Full Body - 6pm"],
+  
+    13: ["Open Gym - 9am"],
+    14: ["Open Gym - 10am"],
+  
+    15: ["Upper Body - 6pm"],
+    16: ["HIIT - 7pm"],
+    17: ["Yoga - 6pm"],
+    18: ["Lower Body - 7pm"],
+    19: ["Full Body - 6pm"],
+  
+    20: ["Bootcamp - 9am"],
+    21: ["Mobility & Stretch - 10am"],
+  
+    22: ["Strength - 6pm"],
+    23: ["HIIT - 7pm"],
+    24: ["Light Cardio - 10am"],
+    25: ["Closed"],
+    26: ["Full Body - 10am"],
+  
+    27: ["Open Gym - 9am"],
+    28: ["Open Gym - 10am"],
+  
+    29: ["Upper Body - 6pm"],
+    30: ["HIIT - 7pm"],
+    31: ["Yoga - 10am"]
+  };
+  
+  
 
 var grid = document.getElementById("calGrid");
 if (grid) {
