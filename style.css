@@ -26,6 +26,7 @@ body {
   
   body.dark header {
     background: #2a2a2a;
+    border-bottom-color: #444;
   }
   
   #logo {
@@ -43,7 +44,7 @@ body {
   main {
     padding: 20px;
     max-width: 1200px;
-    margin : 0 auto;
+    margin: 0 auto;
   }
   
   #trainerRow {
@@ -55,55 +56,6 @@ body {
     width: 30%;
     height: 200px;
     object-fit: cover;
-  }
-  
-  #calendarWrap {
-    border: 2px solid #ccc;
-    padding: 10px;
-  }
-  
-  #calHeader {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    font-weight: bold;
-  }
-  
-  #calGrid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-  }
-  
-  .day, .empty {
-    border: 1px solid #ccc;
-    min-height: 100px;
-    padding: 6px;
-  }
-  
-  .workout {
-    background: #f2f2f2;
-    font-size: 12px;
-    padding: 4px;
-  }
-  
-  .workout:hover {
-    font-size: 14px;
-  }
-  
-  #regForm {
-    max-width: 420px;
-  }
-  
-  #validationResults {
-    display: none;
-  }
-  
-  footer {
-    padding: 15px;
-    background: #e0e0e0;
-    margin-top: 40px;
-    text-align: center;
-  }
-  #trainerRow img {
     transition: transform 0.2s;
   }
   
@@ -111,12 +63,119 @@ body {
     transform: scale(1.1);
   }
   
-  body.dark .day,
-body.dark .dayNum,
-body.dark .workout {
-  color: #eee;
-}
-body.dark .workout {
-    background: #555;
+  #calendarWrap {
+    border: 2px solid #ccc;
+    padding: 12px;
+    border-radius: 12px;
+    background: #fff;
   }
+  
+  body.dark #calendarWrap {
+    background: #222;
+    border-color: #444;
+  }
+  
+  #calHeader {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #calHeader div {
+    padding: 8px 0;
+    border-radius: 10px;
+    background: #eaf2ff;
+  }
+  
+  body.dark #calHeader div {
+    background: #2b2f3a;
+  }
+  
+  #calGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .day,
+  .empty {
+    border: 1px solid #ddd;
+    min-height: 110px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #fafafa;
+  }
+  
+  body.dark .day,
+  body.dark .empty {
+    background: #1c1c1c;
+    border-color: #444;
+    color: #eee;
+  }
+  
+  .day:hover {
+    cursor: pointer;
+  }
+  
+  .empty {
+    opacity: 0.35;
+  }
+  
+  .workout {
+    margin-top: 8px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #e8f2ff;
+    border-left: 5px solid #2b78ff;
+  }
+  
+  body.dark .workout {
+    background: #2a2f3a;
+    border-left-color: #6aa6ff;
+    color: #eee;
+  }
+  
+  #regForm {
+    max-width: 420px;
+  }
+  
+  #regForm input,
+  #regForm select,
+  #regForm textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  #regForm button {
+    padding: 8px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  #validationResults {
+    display: none;
+  }
+  
+  footer {
+    background: #e0e0e0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  body.dark footer {
+    background: #2a2a2a;
+  }
+  
   
